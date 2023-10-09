@@ -1,38 +1,299 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.col_2 {
+  width: 16.66;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col_3 {
+  width: 25%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col_4 {
+  width: 33.33%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col_5 {
+  width: 41.66%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col_6 {
+  width: 50%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col_7 {
+  width: 58.33%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col_8 {
+  width: 66.66%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col_9 {
+  width: 75%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col_10 {
+  width: 83.3%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col_12 {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+
+.d_flex {
+  display: flex;
+}
+
+.js_center {
+  justify-content: center;
+}
+
+.js_end {
+  justify-content: end;
+}
+
+.text_align {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.align_center {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.js_space_between {
+  justify-content: space-between;
+}
+
+.flex_direction_row {
+  flex-direction: row;
+}
+
+.w_100 {
+  width: 100%;
+}
+
+.fs_16 {
+  font-size: 16px;
+}
+
+.fs_58 {
+  font-size: 58px;
+}
+
+.fs_24 {
+  font-size: 24px;
+}
+
+.fs_58 {
+  font-size: 58px;
+}
+
+
+.fs_36 {
+  font-size: 36px;
+}
+
+.fw_400 {
+  font-weight: 400;
+}
+
+.fw_600 {
+  font-weight: 600;
+}
+
+.black {
+  color: #232323;
+  ;
+}
+
+.bg-black {
+  background-color: #232323;
+}
+
+.white {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ff_hind {
+  font-family: 'Hind Siliguri';
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ff_open {
+  font-family: 'Hind Siliguri';
+}
+
+.box-2 {
+
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #F3F5F6;
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.00);
+  padding: 23px 15px;
+}
+
+
+.max-width {
+
+  width: 300px;
+}
+
+.add_btn {
+  border-radius: 5px;
+  background: #232323;
+  padding: 8px 32px;
+  color: #ffff;
+  border: none;
+}
+
+
+.strick_through {
+  text-decoration-line: strikethrough;
+}
+
+
+.text_clr {
+  color: #9E3040;
+}
+
+.gray {
+  color: #686868;
+}
+
+.p-text {
+  padding-top: 22px;
+  padding-bottom: 28px;
+}
+
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.w-300px {
+  width: 300px;
+}
+
+.mt-30-md {
+  margin-top: 30px;
+}
+
+.w_pic_100 {
+  width: 100%;
+}
+
+.w-100-sm {
+  width: 100%;
+}
+
+@media (min-width: 567px) {
+  .w_pic_100 {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+
+
+  .w-100-sm {
+    width: unset;
   }
+
+
+  .w-300px {
+    width: unset;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .col_md_6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .w_pic_100 {
+    width: unset;
+  }
+
+  .mt-30-md {
+    margin-top: 0px;
+  }
+
+}
+
+@media (min-width: 992px) {}
+
+
+@media (min-width: 1200px) {
+  .col_xl_5 {
+    width: 41.66%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .col_xl_7 {
+    width: 58.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .js_xl_end {
+    justify-content: end;
+  }
+
+  .w-xl-100 {
+    width: 100%;
+  }
+
+  .mb-30 {
+    margin-bottom: 30px;
+  }
+
 }
